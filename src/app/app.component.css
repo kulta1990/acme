@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    margin-top: 5rem;
+    box-sizing: border-box;
+}
+
+.row {
+    box-sizing: border-box;
+}
+
+.left_section {
+    width: 50%;
+    background-color: bisque;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.inline_frame {
+    border: 2pt solid black;
+    padding: 20px;
+}
+
+.right_section {
+    width: 40%;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+
+
+}
