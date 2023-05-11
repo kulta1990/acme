@@ -1,24 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+
 .container {
     width: 100%;
-    margin-top: 5rem;
+    height: 100vh;
     box-sizing: border-box;
+    padding-top: 5%;
 }
 
-.row {
-    box-sizing: border-box;
-}
 
 .left_section {
     width: 50%;
-    background-color: bisque;
-    padding: 20px;
+    background-color: #F7F7F7;
+    padding: 100px;
     display: inline-block;
     box-sizing: border-box;
 }
 
 .inline_frame {
-    border: 2pt solid black;
+    box-shadow: 2px 2px 2px #BEBEBE, -2px -2px 2px #BEBEBE ;
+    border-radius: 10px;
     padding: 20px;
+    background-color: #FFFFFF;
 }
 
 .right_section {
@@ -28,4 +32,20 @@
     box-sizing: border-box;
 
 
+}
+.input_text{
+    border: none;
+    width: 100%;
+    background-color: #FFFFFF;
+    font-size: 20px;
+}
+label{
+    font-size: small;
+}
+#h1_1{
+    font-family: 'Open Sans', sans-serif;
+    color: #757575;
+}
+#text_right_section{
+font-size: 18px;
 }
