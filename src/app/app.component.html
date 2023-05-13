@@ -4,11 +4,11 @@
       <h1 id="h1_1">Welcome to Acme.</h1>
       <h6 id="subtext">Create your account by filing the form below.</h6>
       <label for="email" id="emailLabel">E-mail</label><br>
-      <input type="email" name="email" id="email" class="input_text">
-      <hr>
+      <input type="email" name="email" id="email" class="input_text" (click)="click()">
+      <hr id="hr1">
       <label for="password" id="pass">Password</label><br>
-      <input type="password" name="password" id="password" class="input_text">
-      <hr>
+      <input type="password" name="password" id="password" class="input_text" (click)="click2()">
+      <hr id="hr2">
       <input type="checkbox" name="remember_me" id="remember_me" checked>
       <label id="check_label" for="remember_me">Remember me.</label><br><br>
       <div id="section_button">
