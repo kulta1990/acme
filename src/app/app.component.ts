@@ -33,4 +33,29 @@ export class AppComponent {
     hr1.setAttribute('style', 'border-top: 1px solid #A1A1A1');
   }
 
+
+  Regexp() {
+    const a: any = document.getElementById('email') as HTMLElement | null;
+    const d: any = document.getElementById('password') as HTMLElement | null;
+
+    let password: any = d.value;
+    let email: any = a.value;
+
+    let regexEmail: RegExp = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    let regexPasswort: RegExp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{5,}$/;
+
+
+    if (!(regexEmail.test(email))) {
+      let textEmail = document.querySelector('#smallEmail') as HTMLElement;
+      textEmail.innerHTML = 'Invalid e-mail address!';
+    } else if (!(regexPasswort.test(password))) {
+      let textEmail = document.querySelector('#smallEmail') as HTMLElement;
+      textEmail.innerHTML = 'The password must be min. 5 character and must contain min. 1 uppercase + min. 1 lowercase + sign!';
+    } else {
+      let textEmail = document.querySelector('#smallEmail') as HTMLElement;
+      textEmail.innerHTML = 'Registration Completed!';
+      textEmail.setAttribute('style', 'color:green;')
+    }
+  }
+
 }
