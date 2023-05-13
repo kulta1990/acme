@@ -58,4 +58,19 @@ export class AppComponent {
     }
   }
 
+
+  Eye() {
+    let eye = document.querySelector('#closed') as HTMLElement;
+    eye.classList.toggle('fa-eye');
+
+    let d1: any = document.querySelector('#password') as HTMLElement;
+    let v = d1.value;
+    let f: string = d1.getAttribute('type');
+
+    if (f === 'password') {
+      let r = d1.setAttribute('type', 'text');
+    } else if (f === 'text') {
+      let g = d1.setAttribute('type', 'password');
+    }
+  }
 }

@@ -7,7 +7,10 @@
       <input type="email" name="email" id="email" class="input_text" (click)="click()">
       <hr id="hr1">
       <label for="password" id="pass">Password</label><br>
-      <input type="password" name="password" id="password" class="input_text" (click)="click2()">
+      <section class="eyeDiv">
+        <input type="password" name="password" id="password" class="input_text" (click)="click2()">
+        <i class="fa-sharp fa-regular fa-eye-slash" (click)="Eye()" id="closed"></i>
+      </section>
       <hr id="hr2">
       <input type="checkbox" name="remember_me" id="remember_me" checked>
       <label id="check_label" for="remember_me">Remember me.</label><br><br>
