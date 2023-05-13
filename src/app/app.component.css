@@ -242,6 +242,7 @@ i {
 }
 
 
+
 /*------------------ responsive -------------------*/
 @media screen and (max-width:1066px) {
     .left_section {
@@ -263,3 +264,23 @@ i {
 
     }
 }
+
+
+
+
+.indicator-container {
+    margin: .5rem 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10vw;
+    overflow: hidden;
+}
+.indicator {
+    width: 0;
+    height: 100%;
+    background-color: #ff0000;
+    transition: 500ms ease-in-out width;
+}
+
+

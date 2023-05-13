@@ -8,15 +8,25 @@
       <hr id="hr1">
       <label for="password" id="pass">Password</label><br>
       <section class="eyeDiv">
-        <input type="password" name="password" id="password" class="input_text" (click)="click2()">
+        <input type="password" name="password" id="password" class="input_text" (click)="click2()" (input)="Strengtttt()">
         <i class="fa-sharp fa-regular fa-eye-slash" (click)="Eye()" id="closed"></i>
       </section>
       <hr id="hr2">
+
+      <div class="container">
+        <div class="content">
+          <div class="indicator-container">
+            <div class="indicator"></div>
+          </div>
+          <span class="strength"></span>
+        </div>
+      </div>
+
       <input type="checkbox" name="remember_me" id="remember_me" checked>
       <label id="check_label" for="remember_me">Remember me.</label><br><br>
       <small id="smallEmail"></small>
       <div id="section_button">
-        <input type="submit" value="Sign up" id="button_signup" (click)="Regexp()">
+        <input type="submit" value="Sign up" id="button_signup" (click)="Regex()">
       </div>
     </div>
     <div class="footer_left_section">

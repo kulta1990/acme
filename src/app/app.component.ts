@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Acme';
+  password: any;
 
 
 
@@ -34,7 +35,7 @@ export class AppComponent {
   }
 
 
-  Regexp() {
+  Regex() {
     const a: any = document.getElementById('email') as HTMLElement | null;
     const d: any = document.getElementById('password') as HTMLElement | null;
 
@@ -56,7 +57,47 @@ export class AppComponent {
       textEmail.innerHTML = 'Registration Completed!';
       textEmail.setAttribute('style', 'color:green;')
     }
+
   }
+
+
+
+  pwStrengthEl = document.querySelector('.strength');
+  indicatorEl = document.querySelector('.indicator');
+  colors = ['red', 'yellow', 'green'];
+  texts = ['weak', 'medium', 'strong'];
+
+
+  Checker(width: any, text: any, background: any, color: any) {
+
+    let pwStrengthEl: any = document.querySelector('.strength');
+    let indicatorEl: any = document.querySelector('.indicator');
+
+    indicatorEl.style.width = width;
+    indicatorEl.style.background = background;
+    pwStrengthEl.innerText = text;
+    pwStrengthEl.style.color = color;
+  };
+
+
+  current_strength = 0;
+
+  Strengtttt() {
+    const d: any = document.getElementById('password') as HTMLElement | null;
+    let password: any = d.value;
+
+    if (password.length <= 8) {
+      this.current_strength = 3;
+      this.Checker(`${100 / 3}%`, this.texts[0], this.colors[0], this.colors[0]);
+    } else if (password.length <= 15) {
+      this.current_strength = 2;
+      this.Checker(`${100 / 2}%`, this.texts[1], this.colors[1], this.colors[1]);
+    } else {
+      this.current_strength = 1;
+      this.Checker(`${100 / 1}%`, this.texts[2], this.colors[2], this.colors[2]);
+    }
+  }
+
 
 
   Eye() {
