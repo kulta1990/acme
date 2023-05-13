@@ -1,51 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 
-
 .container {
-    width: 100%;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    padding-top: 5%;
 }
 
 
 .left_section {
-    width: 50%;
+    width: 47%;
+    height: 100vh;
     background-color: #F7F7F7;
-    padding: 100px;
+    padding: 3% 3% 0% -3%;
     display: inline-block;
-    box-sizing: border-box;
+
 }
 
 .inline_frame {
-    box-shadow: 2px 2px 2px #BEBEBE, -2px -2px 2px #BEBEBE ;
+    box-shadow: 2px 2px 2px #BEBEBE, -2px -2px 2px #BEBEBE;
     border-radius: 10px;
     padding: 20px;
     background-color: #FFFFFF;
+    margin: 15% 15% 3% 15%;
+
+}
+
+#inline_frame2 {
+    margin: 25% 15% 15% 15%;
+    padding: 20px;
+}
+
+#section_button {
+    text-align: end;
 }
 
 .right_section {
-    width: 40%;
-    padding: 20px;
+    width: 53%;
+    height: 100vh;
     display: inline-block;
-    box-sizing: border-box;
-
-
+    text-align: left;
+    vertical-align: top;
+    opacity: 0.8;
+    background: url('https://w0.peakpx.com/wallpaper/13/675/HD-wallpaper-blur-background-blur-natureblur-new-york.jpg');
+    background-size: cover;
+    color: #FFFFFF;
 }
-.input_text{
+
+.input_text,
+.input_text:focus {
     border: none;
     width: 100%;
     background-color: #FFFFFF;
     font-size: 20px;
+    font-family: -apple-system, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
 }
-label{
-    font-size: small;
+
+.footer_left_section {
+    margin: -6% 15%;
+    padding-top: 0;
+    color: #A1A1A1;
+    display: inline-block;
+    font-family: -apple-system, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    font-size: 12px;
 }
-#h1_1{
+
+#terms,
+#privacy,
+#dotted {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-left: 3pt;
+    cursor: help;
+}
+
+#dotted {
+    vertical-align: 2px;
+    font-size: 16px;
+}
+
+a {
+
+    text-decoration: none !important;
+    color: #A1A1A1;
+}
+
+
+#emailLabel,
+#pass {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #BEBEBE;
+
+}
+
+
+input:focus {
+    outline: none;
+    background-color: #FFFFFF;
+
+}
+
+#h1_1 {
     font-family: 'Open Sans', sans-serif;
     color: #757575;
 }
-#text_right_section{
-font-size: 18px;
+
+#text_right_section {
+    font-size: 14px;
+    font-family: -apple-system, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+}
+
+#button_signup {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-block-start: 0.5cm;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+}
+
+#subtext {
+    font-family: 'Open Sans', sans-serif;
+    color: #A1A1A1;
+    letter-spacing: 1pt;
+}
+
+#check_label {
+    font-family: -apple-system, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    color: #A1A1A1;
+
+}
+
+#remember_me {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #A1A1A1;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#remember_me:checked {
+    background-color: #4A90E2;
+}
+
+hr {
+    border-top: 1px solid #A1A1A1;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+
+}
+
+#right_h2 {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#login {
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    border: 4px solid #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-block-start: 0.5cm;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:1066px) {
+    .left_section {
+        width: 100%;
+    }
+
+    .right_section {
+        width: 100%;
+    }
+
+    .left_section {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .right_section {
+        width: 100%;
+        height: 100vh;
+
+    }
 }

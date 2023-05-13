@@ -1,31 +1,36 @@
 <div class="container">
-  <div class="row">
-    <div class="left_section">
-      <div class="inline_frame">
-        <h1 id="h1_1">Welcome to Acme.</h1>
-        <p>Create your account by filing the form below.</p>
-        <label for="email">E-mail</label><br>
-        <input type="email" name="email" id="email" class="input_text">
-        <hr>
-        <label for="password">Password</label><br>
-        <input type="password" name="password" id="password" class="input_text">
-        <hr>
-        <input type="checkbox" name="remember_me" id="remember_me" checked>
-        <label id="check_label" for="remember_me">Remember me.</label><br><br>
-        <input type="submit" value="Sign up">
-      </div>
-      <div class="footer_left_section">
-        <small>&copy;2015 Acme, Inc. <span id="terms">Terms</span> <span id="privacy">Privacy</span><span
-            id="dotted">...</span></small>
+  <div class="left_section">
+    <div class="inline_frame">
+      <h1 id="h1_1">Welcome to Acme.</h1>
+      <h6 id="subtext">Create your account by filing the form below.</h6>
+      <label for="email" id="emailLabel">E-mail</label><br>
+      <input type="email" name="email" id="email" class="input_text">
+      <hr>
+      <label for="password" id="pass">Password</label><br>
+      <input type="password" name="password" id="password" class="input_text">
+      <hr>
+      <input type="checkbox" name="remember_me" id="remember_me" checked>
+      <label id="check_label" for="remember_me">Remember me.</label><br><br>
+      <div id="section_button">
+        <input type="submit" value="Sign up" id="button_signup">
       </div>
     </div>
-    <div class="right_section">
-      <img src="" alt="acme" title="acme">
-      <h2>Do you already have an account?</h2>
+    <div class="footer_left_section">
+      <small>&copy;2015 Acme, Inc. <span id="terms"><a href="#" target="_blank"
+            rel="noopener noreferrer">Terms</a></span>
+        <span id="privacy"><a href="#" target="_blank" rel="noopener noreferrer">Privacy</a></span><span
+          id="dotted">...</span></small>
+    </div>
+  </div>
+  <div class="right_section">
+    <div id="inline_frame2">
+      <img src="../assets/acme.png" alt="acme" title="acme">
+      <h2 id="right_h2">Do you already have an account?</h2>
       <h4 id="text_right_section">That's awesome! You can login by clicking on the button below. To skip this next time,
         you can ask us to remember your login credentials.</h4>
-      <input type="button" value="Log in">
+      <input type="button" value="Log in" id="login">
     </div>
   </div>
 </div>
+
 <router-outlet></router-outlet>
